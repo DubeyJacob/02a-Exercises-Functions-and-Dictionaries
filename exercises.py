@@ -16,9 +16,9 @@ s = 0
 for e in example_list:
 	s += e
 print(s)
-#
+# 38
 # What do these five lines of code do?
-#
+# added the numbers in the list together
 
 # --------------------------------------------------
 
@@ -33,15 +33,17 @@ example_set = example_set - example_set_2
 print(example_set)
 set_to_list = list(example_set)
 print(set_to_list)
-#
-#
-#
-#
-#
+# {1, 2, 3, 4}
+# 3 is in the set
+# 4 is in the set
+# {1, 2, 3}
+# [1, 2, 3]
 # What qualities of a python set do you see in the (above) example?
-#
+# They eliminate repeating values in the set such as in the first example.
+# The numbers in the second list were removed from the first list.
+# There was also the case that it can list the values in the set wihtin a given range.
 # In what situations might a python set be a useful data structure?
-#
+# When you need to remove repetition in a list to a set of similar numbers or variables.
 
 # --------------------------------------------------
 
@@ -55,15 +57,16 @@ students = ['James','Paige','George','Ruth','Gwen','Claire']
 example_dictionary['students'] = students
 print(example_dictionary)
 print(example_dictionary['students'][2])
-#
-#
-#
-#
-#
+# {'class': 'z-399', 'teacher': 'Jason Francis', 'time': 9.0, 5: 12345}
+# 12345
+# {'class': 'z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345}
+# {'class': 'z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345, 'students': ['James', 'Paige', 'George', 'Ruth', 'Gwen', 'Claire']}
+# George
 # What qualities of a python dictionary do you see in the (above) example?
-#
+# Ability to edit variables as well as add variables in. there is also the abiltiy to recall variables within the dictionary.
 # Write a python dictionary that might describe a bicycle. I'll get you started. Think about what qualities a bicycle could have (top speed, mileage, pedals, seat height, etc)
-bicycle = { 'color':'', 'wheels':[] }
+bicycle = { 'color':'red', 'wheels':5, 'speed':'10 speed', 'decals': 'flames', 'handle bars':'upright', 'brakes':'none' }
+
 
 # --------------------------------------------------
 
@@ -77,11 +80,11 @@ r = product_list([1,2,3])
 print(r)
 print(product_list([2,5,6]))
 print(product_list([-2,3,-4,5,-6]))
-#
-#
-#
+# 6
+# 60
+# -720
 # What is happening in the (above) example?
-#
+# The function multiplied the numbers in the list together
 
 # --------------------------------------------------
 
@@ -108,16 +111,16 @@ for y in years:
 		print(str(y) + ': I get an extra day this year!')
 	else:
 		print(str(y) + ': Just 365 for me')
-#
-#
-#
-#
-#
-#
+# 2017: Just 365 for me
+# 2018: Just 365 for me
+# 2000: I get an extra day this year!
+# 2100: Just 365 for me
+# 2400: I get an extra day this year!
+# This isn't even a year: Just 365 for me
 # What is happening in the (above) example?
-#
+# It is listing the given years and determining whether or not that year will be a leap year.
 # What is the purpose for the multi-line comment at the beginning of the is_leap_year function?
-#
+# The multi-line comment is for the programmer to know what the def function is about.
 # What happens if you pass a value to the function that isn't a year? Why?
 #
 
@@ -145,24 +148,24 @@ for i in range(0,10):
 		print('%d: buzz'%i)
 	else:
 		print(i)
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+# 0: fizzbuzz
+# 1:
+# 2: buzz
+# 3: fizz
+# 4: buzz
+# 5:
+# 6: fizzbuzz
+# 7:
+# 8: buzz
+# 9: fizz
 # What is happening in this example?
-#
+# if a number in range 0-10 is divisible by 3 it returns fizz, if it is divisible by 2 it returns buzz. If divisible by both it will return fizzbuzz.
 # How would you alter the program so that it prints fizz on multiples of 5 and buzz on multiples of 4?
-#
+# change the numbers 3 and 2 in fizz and buzz respectively to 4 and 5 respectively.
 # We actually don't want the program to print fizzbuzz when i <= 0. How would you fix this problem?
-#
+# Remove the code that includes both is_fizz(i) and is_buzz(i) in line 143 as well as the code that follows in line 144
 # How would you alter the program so that it prints your name whenever both conditions are met?
-#
+# replace print('%d: fizzbuzz' %i) in line 144 with print('%d: Jacob Dubey' %i)
 
 # --------------------------------------------------
 
@@ -219,10 +222,10 @@ script = [
 starting = 0
 get_option(script[starting]['options'])
 # What is happening in this block of code?
-#
+# It is creating a dictionary of different locations as well as options (in a separate dictionary) it then lists the options and depending on what you input it then returns the corresponding location number.
 # What does the get_option function do?
-#
+# it lists the options within the list
 # How would you display the description of the current location?
-#
+# Include a print function to include the description
 # How would you display the description of the next location (after selecting an option)?
-#
+# print function that shows the description.
